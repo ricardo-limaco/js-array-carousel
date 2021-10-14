@@ -1,0 +1,29 @@
+/* Img */
+._image-container {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+._image-sidebar {
+  border: 2px solid white;
+  min-height: 150px;
+}
+
+/* Arrow */
+._arrow {
+  position: absolute;
+  background-color: #cccccc;
+  padding: 8px 13px;
+  border-radius: 50%;
+}
+._arrow-up {
+  top: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+._arrow-down {
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+}
