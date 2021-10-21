@@ -1,23 +1,75 @@
-/* Img */
-._image-container {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/************** Hero Img **************/
+._container-hero {
+  position: relative;
+  height: 500px;
+}
+
+._image-container{
+  width: 100%;
+  height: 100%;
+  opacity: 0%;
+  position: absolute;
+}
+
+._image-container img{
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-._image-sidebar {
-  border: 2px solid white;
-  min-height: 120px;
+
+/************** Text **************/
+._text-container {
+  color: white;
+  text-align: end;
+  padding: 0 25px 25px;
+  position: absolute;
+  bottom: 5px;
+  width: 100%;
+  text-shadow: 2px 2px 8px #000000;
+}
+._title {
+  font-weight: 700;
+}
+._text {
+font-size: 18px;
 }
 
 
 
-/* Arrow */
+
+
+/************** preview Img **************/
+._sidebar-container {
+  height: 500px;
+  /* border: 2px solid white;
+  min-height: 120px; */
+}
+._sidebar-container img{
+  filter: brightness(40%);
+  width: 100%;
+  height: 20%;
+  object-fit: cover;
+}
+
+
+
+
+
+/************** Arrow **************/
 ._arrow {
   position: absolute;
-  background-color: #cccccc;
-  padding: 8px 13px;
+  background-color: white;
+  padding: 8px 9px;
   border-radius: 50%;
+  cursor: pointer;
+  z-index: 99;
 }
 ._arrow-up {
   top: 15px;
@@ -28,4 +80,19 @@
   bottom: 15px;
   left: 50%;
   transform: translateX(-50%);
+}
+
+
+
+/************** Utilities **************/
+._pt-main {
+  padding-top: 150px;
+}
+
+._active {
+  opacity: 100% !important;
+}
+._active-preview {
+  filter: brightness(100%) !important;
+  border: 3px solid white;
 }
